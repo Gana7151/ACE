@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SRKR ACE Events</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+
+        header {
+            background-color: #002147;
+            color: #ffffff;
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .logo {
+            height: 50px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .event-row {
+            display: grid;
+            gap: 25px;
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+
+        .row-3 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .row-2 {
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .event {
+            background-color: #ffffff;
+            padding-bottom: 25px;
+            border-radius: 10px;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .event:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .event-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .event h3 {
+            margin: 0 0 10px 0;
+            color: #003366;
+            font-size: 1.5em;
+            font-weight: 600;
+            padding: 0 25px;
+        }
+
+        .event-description {
+            color: #555;
+            line-height: 1.6;
+            margin-top: 15px;
+            opacity: 0;
+            height: 0;
+            overflow: hidden;
+            transition: opacity 0.3s ease, height 0.3s ease;
+            padding: 0 25px;
+        }
+
+        .event:hover .event-description {
+            opacity: 1;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="ace.jpeg" alt="ACE Logo" class="logo">
+            <h1>SRKR ACE - Top 5 Events</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="event-row row-3">
+            <div class="event">
+                <img src="Prajwalan.jpg" alt="Prajwalan Event" class="event-image">
+                <h3>Prajwalan</h3>
+                <div class="event-description">
+                    Prajwalan is an immersive hackathon where ideas take flight.
+                    Join a passionate community to tackle real-world tech challenges.
+                    Leverage expert mentorship and hands-on workshops to build your solution.
+                    Showcase your skills and compete for exciting prizes and recognition.
+                    This is your chance to innovate and shape the future of technology.
+                </div>
+            </div>
+            <div class="event">
+                <img src="Spurthi.jpg" alt="Spurthi Event" class="event-image">
+                <h3>Spurthi</h3>
+                <div class="event-description">
+                  Spurthi is the annual flagship fest celebrating technology and creativity.
+                  It is a grand fusion of technical and cultural events.
+                  Compete in coding ,tech and fun challenges.
+                  Simultaneously, showcase your talent in various cultural competitions.
+                  Join us for a unique platform to learn, compete, and network.                
+                </div>
+            </div>
+            <div class="event">
+                <img src="MLXplore.jpg" alt="MLXplore Event" class="event-image">
+                <h3>MLXplore</h3>
+                <div class="event-description">
+                    MLXplore is a highly focused machine learning extravaganza.
+                    It's centered on hands-on projects and intensive model-building contests.
+                    Gain practical skills through expert-led tutorials and workshops.
+                    Tackle real-world AI challenges using the latest techniques.
+                    This is a must-attend for anyone passionate about AI and data science.
+                </div>
+            </div>
+        </div>
+        <div class="event-row row-2">
+            <div class="event">
+                <img src="SkillUP.jpg" alt="SkillUp Event" class="event-image">
+                <h3>SkillUp</h3>
+                <div class="event-description">
+                    SkillUp is a series of hands-on bootcamp.
+                    It is designed to upskill students in trending technologies.
+                    You'll gain practical mastery over essential tech tools and frameworks.
+                    This training helps bridge the gap between academia and industry.
+                    Join us to enhance your resume and kickstart your tech career.
+                </div>
+            </div>
+            <div class="event">
+                <img src="Newbies.jpg" alt="Newbies Event" class="event-image">
+                <h3>Newbies</h3>
+                <div class="event-description">
+                    Newbies is our warm onboarding and orientation event.
+                    It is designed to officially welcome freshers to the ACE community.
+                    Get to know our vision, mission, and the senior members.
+                    Connect with fellow students and find your place within the club.
+                    This is the perfect way to start your journey with ACE on the right foot.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
